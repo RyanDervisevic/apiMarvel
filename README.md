@@ -17,7 +17,7 @@ zero ou plusieurs comédiens on interprté le rôle du personnage
 #### Get heroe
 
 ```http
-  GET /api/items/${id}
+  GET /api/heroe/${id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -27,7 +27,7 @@ zero ou plusieurs comédiens on interprté le rôle du personnage
 ## Installation
 
 ```
-  git clone https://github.com/Aazarias/ApiGomasterclass.git
+  git clone https://github.com/RyanDervisevic/apiMarvel.git
   go run main.go
 ```
 
