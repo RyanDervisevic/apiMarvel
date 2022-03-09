@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  db:
+    container_name: est-db
+    image: amd64/mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: db_heroes_marvel
+      MYSQL_USER: user-marvel
+      MYSQL_PASSWORD: marvel
+    ports:
+      - 3306:3306
+  cache:
+    image: redis:6.2
+    container_name: est-cache
+    restart: always
+    ports:
+      - 6379:6379
