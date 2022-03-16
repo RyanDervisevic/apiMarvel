@@ -7,7 +7,7 @@ zero ou plusieurs comédiens on interprté le rôle du personnage
 #### Get all heroes
 
 ```http
-  GET /api/heroes
+  GET /heroes
 ```
 
 | Parameter | Type     | Description                |
@@ -17,7 +17,7 @@ zero ou plusieurs comédiens on interprté le rôle du personnage
 #### Get heroe
 
 ```http
-  GET /api/heroe/${id}
+  GET /heroes/${id}
 ```
 
 | Parameter | Type     | Description                       |
