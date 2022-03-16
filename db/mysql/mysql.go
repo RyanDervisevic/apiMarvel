@@ -14,7 +14,6 @@ import (
 type MySQL = sqlite.SQLite
 
 func New(dbName, heroes, pass, port string) *db.Storage {
-	// dsn := "estiam-user:estiam-pwd@tcp(localhost:3306)/estiam-db?charset=utf8mb4&parseTime=True&loc=Local"
 	dsn := fmt.Sprintf("%v:%v@tcp(localhost:%v)/%v?charset=utf8mb4&parseTime=True&loc=Local", heroes, pass, port, dbName)
 	conn, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {

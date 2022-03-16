@@ -8,7 +8,6 @@ type Storage struct {
 
 type StorageHeroes interface {
 	GetByID(id string) (*model.Heroes, error)
-	//GetByEmail(email string) (*model.Heroes, error)
 	GetAll() ([]model.Heroes, error)
 	DeleteByID(id string) error
 	Create(u *model.Heroes) (*model.Heroes, error)

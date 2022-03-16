@@ -75,29 +75,6 @@ func (s *Service) CreateHeroes(c *gin.Context) {
 	})
 }
 
-// func (s *Service) UpdateHeroes(c *gin.Context) {
-// 	id := c.Param("id")
-// 	var h model.Heroes
-// 	err := c.BindJSON(&h)
-// 	if len(id) == 0 {
-// 		c.JSON(http.StatusBadRequest, gin.H{
-// 			"error id": id,
-// 		})
-// 		return
-// 	}
-// 	_, err = s.db.Heroes.Update(id,)
-// 	if err != nil {
-// 		log.Println("service:", err)
-// 		c.JSON(http.StatusInternalServerError, gin.H{
-// 			"error": "error internal",
-// 		})
-// 		return
-// 	}
-// 	c.JSON(http.StatusAccepted, gin.H{
-// 		"updated": id,
-// 	})
-// }
-
 func (s *Service) DeleteHeroes(c *gin.Context) {
 	id := c.Param("id")
 

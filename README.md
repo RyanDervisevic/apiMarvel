@@ -28,6 +28,7 @@ zero ou plusieurs comédiens on interprté le rôle du personnage
 
 ```
   git clone https://github.com/RyanDervisevic/apiMarvel.git
+  docker-compose up
   go run main.go
 ```
 
